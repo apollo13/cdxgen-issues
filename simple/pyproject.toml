@@ -1,0 +1,16 @@
+[project]
+name = "oversight-backend"
+description = "Default template for PDM package"
+authors = [
+    {name = "Florian Apolloner", email = "florian@apolloner.eu"},
+]
+dependencies = [
+    "Django==5.1b1",
+]
+requires-python = ">=3.12,<3.13"
+license = {text = "MIT"}
+dynamic = ["version"]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
