@@ -1,0 +1,6 @@
+{
+  "name": "oversight-frontend",
+  "devDependencies": {
+    "@patternfly/patternfly": "^6.0.0-alpha.201"
+  }
+}

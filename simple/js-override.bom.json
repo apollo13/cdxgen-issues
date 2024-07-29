@@ -1,0 +1,113 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:97de7199-a53c-4dde-9c3b-c39071ef7d5d",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-07-29T07:49:00Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "10.8.8",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@10.8.8",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.8.8",
+          "author": "OWASP Foundation",
+          "publisher": "OWASP Foundation"
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "group": "",
+      "name": "test",
+      "version": "123",
+      "type": "application",
+      "purl": "pkg:npm/test@123",
+      "bom-ref": "pkg:npm/test@123"
+    },
+    "properties": [
+      {
+        "name": "cdx:bom:componentTypes",
+        "value": "npm"
+      },
+      {
+        "name": "cdx:bom:componentNamespaces",
+        "value": "@patternfly"
+      }
+    ]
+  },
+  "components": [
+    {
+      "group": "@patternfly",
+      "name": "patternfly",
+      "version": "6.0.0-alpha.204",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "56162d2fc356902d08545ba37a293826074dcae02beede15663fb402de3bbf1236fc2deaaca17459d4dbef16384bf307fda82104a0bcbc26e10649c012174e63"
+        }
+      ],
+      "purl": "pkg:npm/%40patternfly/patternfly@6.0.0-alpha.204",
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@patternfly/patternfly/-/patternfly-6.0.0-alpha.204.tgz"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:npm/@patternfly/patternfly@6.0.0-alpha.204",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/simple/package-lock.json"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/simple/package-lock.json"
+        },
+        {
+          "name": "ResolvedUrl",
+          "value": "https://registry.npmjs.org/@patternfly/patternfly/-/patternfly-6.0.0-alpha.204.tgz"
+        },
+        {
+          "name": "LocalNodeModulesPath",
+          "value": "node_modules/@patternfly/patternfly"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:npm/@patternfly/patternfly@6.0.0-alpha.204",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/test@123",
+      "dependsOn": [
+        "pkg:npm/@patternfly/patternfly@6.0.0-alpha.204"
+      ]
+    }
+  ]
+}
