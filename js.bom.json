@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:6939491b-f021-4750-a4eb-5907102f8b11",
+  "serialNumber": "urn:uuid:44753db7-67a0-47d5-a61f-87755f45847c",
   "version": 1,
   "metadata": {
-    "timestamp": "2024-07-29T07:48:04Z",
+    "timestamp": "2024-07-29T08:16:38Z",
     "tools": {
       "components": [
         {
@@ -31,11 +31,11 @@
     ],
     "component": {
       "group": "",
-      "name": "simple",
+      "name": "app",
       "version": "",
       "type": "application",
-      "purl": "pkg:npm/simple",
-      "bom-ref": "pkg:npm/simple"
+      "purl": "pkg:npm/app",
+      "bom-ref": "pkg:npm/app"
     },
     "properties": [
       {
@@ -77,7 +77,7 @@
             {
               "technique": "manifest-analysis",
               "confidence": 1,
-              "value": "/app/simple/package-lock.json"
+              "value": "/app/package-lock.json"
             }
           ]
         }
@@ -85,7 +85,7 @@
       "properties": [
         {
           "name": "SrcFile",
-          "value": "/app/simple/package-lock.json"
+          "value": "/app/package-lock.json"
         },
         {
           "name": "ResolvedUrl",
@@ -104,7 +104,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:npm/simple",
+      "ref": "pkg:npm/app",
       "dependsOn": [
         "pkg:npm/@patternfly/patternfly@6.0.0-alpha.204"
       ]
